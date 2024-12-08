@@ -1,0 +1,124 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tab-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.tab-btn:hover {
+  background-color: #45a049;
+}
+
+.tab-btn.active {
+  background-color: #45a049;
+  font-weight: bold;
+}
+
+/* Sections masquées */
+.hidden {
+  display: none;
+}
+
+/* Conteneur principal */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenu actif */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Style pour les tableaux dans la fiche de révision */
+#revision-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#revision-container th,
+#revision-container td {
+  border: 1px solid #333; /* Bordures visibles */
+  padding: 10px;
+  text-align: left;
+}
+
+#revision-container th {
+  background-color: #f4f4f4; /* Fond des en-têtes */
+  font-weight: bold;
+}
+
+#revision-container td {
+  background-color: #fff; /* Fond des cellules */
+}
+
+/* Style pour les tableaux dans l'entraînement */
+#training-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#training-container th,
+#training-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#training-container th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+#training-container td {
+  background-color: #fff;
+}
+
+/* Boutons */
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #45a049;
+}

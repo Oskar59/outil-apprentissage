@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outils d'Apprentissage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Outils d'Apprentissage</h1>
+    </header>
+    <nav>
+      <button class="tab-btn active" data-tab="test-section">Test</button>
+      <button class="tab-btn" data-tab="fiche-section">
+        Fiche de Révision
+      </button>
+      <button class="tab-btn" data-tab="training-section">Entraînement</button>
+    </nav>
+    <main>
+      <!-- Section Test -->
+      <section id="test-section" class="tab-content active">
+        <h2>Test d'Anglais</h2>
+        <div class="upload-container">
+          <label for="fileInputTest">Chargez un fichier CSV :</label>
+          <input type="file" id="fileInputTest" accept=".csv" />
+        </div>
+        <div id="quiz-container" class="hidden">
+          <form id="quiz-form"></form>
+          <button id="submitTestBtn" class="hidden">Soumettre</button>
+          <div id="test-result" class="hidden"></div>
+        </div>
+      </section>
+
+      <!-- Section Fiche de Révision -->
+      <section id="fiche-section" class="tab-content hidden">
+        <h2>Fiche de Révision</h2>
+        <div class="upload-container">
+          <label for="fileInputFiche">Chargez un fichier CSV :</label>
+          <input type="file" id="fileInputFiche" accept=".csv" />
+        </div>
+        <button id="generateFicheBtn" class="hidden">Générer la fiche</button>
+        <div id="revision-container" class="hidden">
+          <h2>Votre Fiche de Révision</h2>
+          <div id="revision-content"></div>
+          <button id="downloadFicheBtn" class="hidden">
+            Télécharger la fiche
+          </button>
+          <button id="downloadImageBtn" class="hidden">
+            Télécharger en image
+          </button>
+        </div>
+      </section>
+
+      <!-- Section Entraînement -->
+      <section id="training-section" class="tab-content hidden">
+        <h2>Entraînez-vous</h2>
+        <div class="upload-container">
+          <label for="fileInputTraining">Chargez un fichier CSV :</label>
+          <input type="file" id="fileInputTraining" accept=".csv" />
+        </div>
+        <button id="generateTrainingBtn" class="hidden">
+          Générer l'entraînement
+        </button>
+        <div id="training-container" class="hidden">
+          <h2>Questions</h2>
+          <div id="training-content"></div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
